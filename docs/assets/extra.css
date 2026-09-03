@@ -1,0 +1,262 @@
+/* iNCRYPTO design tokens → Material for MkDocs
+   Source of truth: frontend ds-tokens (globals.css / tailwind.config) */
+
+:root {
+  --inc-orange: #FF6B2C;
+  --inc-orange-hover: #FF7E47;
+  --inc-orange-soft: rgba(255, 107, 44, 0.14);
+
+  /* header / tabs are dark in both schemes, as in the product */
+  --md-primary-fg-color: #131518;
+  --md-primary-fg-color--light: #1A1C20;
+  --md-primary-fg-color--dark: #0E0F12;
+  --md-primary-bg-color: #F5F5F7;
+  --md-primary-bg-color--light: rgba(245, 245, 247, 0.65);
+
+  --md-accent-fg-color: var(--inc-orange);
+  --md-accent-fg-color--transparent: rgba(255, 107, 44, 0.10);
+  --md-accent-bg-color: #FFFFFF;
+  --md-accent-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+/* ---------- dark (default) ---------- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0A0B0D;
+  --md-default-fg-color: #F5F5F7;
+  --md-default-fg-color--light: rgba(245, 245, 247, 0.65);
+  --md-default-fg-color--lighter: rgba(245, 245, 247, 0.45);
+  --md-default-fg-color--lightest: rgba(245, 245, 247, 0.07);
+
+  --md-typeset-color: #F5F5F7;
+  --md-typeset-a-color: var(--inc-orange-hover);
+  --md-typeset-table-color: rgba(255, 255, 255, 0.10);
+  --md-typeset-table-color--light: rgba(255, 255, 255, 0.04);
+
+  --md-code-bg-color: #131518;
+  --md-code-fg-color: #F5F5F7;
+  --md-code-hl-color: rgba(255, 107, 44, 0.18);
+
+  --md-admonition-bg-color: #131518;
+  --md-footer-bg-color: #0E0F12;
+  --md-footer-bg-color--dark: #0A0B0D;
+  --md-footer-fg-color: #F5F5F7;
+  --md-footer-fg-color--light: rgba(245, 245, 247, 0.65);
+  --md-footer-fg-color--lighter: rgba(245, 245, 247, 0.45);
+
+  --inc-surface: #131518;
+  --inc-border: rgba(255, 255, 255, 0.10);
+  --inc-border-subtle: rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- light ---------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #F5F5F7;
+  --md-default-fg-color: #1A1A1A;
+  --md-default-fg-color--light: #6B7280;
+  --md-default-fg-color--lighter: #9CA3AF;
+  --md-default-fg-color--lightest: rgba(0, 0, 0, 0.06);
+
+  --md-typeset-color: #1A1A1A;
+  --md-typeset-a-color: var(--inc-orange);
+  --md-typeset-table-color: #E5E7EB;
+  --md-typeset-table-color--light: rgba(0, 0, 0, 0.03);
+
+  --md-code-bg-color: #EDEEF0;
+  --md-code-fg-color: #1A1A1A;
+  --md-code-hl-color: rgba(255, 107, 44, 0.16);
+
+  --md-admonition-bg-color: #FFFFFF;
+  --md-footer-bg-color: #131518;
+  --md-footer-bg-color--dark: #0E0F12;
+
+  --inc-surface: #FFFFFF;
+  --inc-border: #E5E7EB;
+  --inc-border-subtle: rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- header: dark with the product's orange accent line ---------- */
+.md-header {
+  background-color: #131518;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, var(--inc-orange) 0%, rgba(255, 107, 44, 0) 70%) 1;
+  box-shadow: none;
+}
+.md-tabs {
+  background-color: #0E0F12;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.05rem;
+  width: auto;
+}
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.md-search__form {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.md-search__form:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+/* ---------- typography ---------- */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--md-default-fg-color);
+}
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.md-typeset h3 {
+  font-weight: 600;
+}
+.md-typeset code {
+  font-variant-ligatures: none;
+}
+
+/* ---------- hero (home) ---------- */
+.inc-hero {
+  position: relative;
+  padding: 3rem 2rem 2.5rem;
+  margin: 0 0 1.5rem;
+  border-radius: 12px;
+  background:
+    radial-gradient(60% 90% at 90% 110%, rgba(255, 107, 44, 0.20) 0%, rgba(255, 107, 44, 0) 70%),
+    linear-gradient(135deg, #0A0B0D 0%, #131E33 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #F5F5F7;
+  overflow: hidden;
+}
+.inc-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+.inc-hero > * {
+  position: relative;
+}
+.inc-hero h1 {
+  color: #F5F5F7;
+  margin-bottom: 0.4rem;
+  font-size: 2rem;
+}
+.inc-hero p {
+  color: rgba(245, 245, 247, 0.72);
+  max-width: 44rem;
+  font-size: 0.95rem;
+}
+.inc-hero .inc-eyebrow {
+  display: inline-block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--inc-orange);
+  margin-bottom: 0.9rem;
+}
+.inc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+.inc-chips span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(19, 21, 24, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #C9CED6;
+}
+.inc-chips span::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--inc-orange);
+}
+
+/* ---------- grid cards on tokens ---------- */
+.md-typeset .grid.cards > ul > li {
+  background: var(--inc-surface);
+  border: 1px solid var(--inc-border);
+  border-radius: 10px;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: rgba(255, 107, 44, 0.55);
+  transform: translateY(-1px);
+}
+.md-typeset .grid.cards > ul > li > hr {
+  border-color: var(--inc-border-subtle);
+}
+.md-typeset .grid.cards .twemoji.lg {
+  color: var(--inc-orange);
+}
+
+/* ---------- status badges ---------- */
+.inc-status {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.inc-status--live { background: rgba(34, 197, 94, 0.14); color: #4ADE80; }
+.inc-status--dev  { background: rgba(255, 107, 44, 0.14); color: var(--inc-orange-hover); }
+.inc-status--plan { background: rgba(139, 92, 246, 0.14); color: #A78BFA; }
+[data-md-color-scheme="default"] .inc-status--live { color: #15803D; }
+[data-md-color-scheme="default"] .inc-status--dev  { color: #C2410C; }
+[data-md-color-scheme="default"] .inc-status--plan { color: #6D28D9; }
+
+/* ---------- brand swatches ---------- */
+.inc-swatch {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-right: 0.45rem;
+  border: 1px solid var(--inc-border);
+}
+
+/* ---------- footer ---------- */
+.md-footer-meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.md-social__link:hover {
+  color: var(--inc-orange);
+}
+
+/* ---------- buttons (Material defaults to primary colour, which is our dark header) ---------- */
+.md-typeset .md-button {
+  border-color: var(--inc-orange);
+  color: var(--inc-orange);
+  font-weight: 500;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background-color: var(--inc-orange);
+  border-color: var(--inc-orange);
+  color: #FFFFFF;
+}
+.md-typeset .md-button--primary {
+  background-color: var(--inc-orange);
+  border-color: var(--inc-orange);
+  color: #FFFFFF;
+}

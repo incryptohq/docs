@@ -1,0 +1,30 @@
+name: Documentation issue
+description: Report an error, an outdated statement or a gap in docs.incrypto.me
+title: "[docs] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: URL of the page on docs.incrypto.me
+      placeholder: https://docs.incrypto.me/platform/networks/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change (optional)
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This is not a security issue (those go to security@incrypto.me, never to a public issue)
+          required: true

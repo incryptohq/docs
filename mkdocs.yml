@@ -1,0 +1,96 @@
+site_name: iNCRYPTO Docs
+site_url: https://docs.incrypto.me/
+site_description: Developer and partner documentation for the iNCRYPTO digital asset platform.
+site_author: iNCRYPTO
+copyright: "&copy; 2026 iNCRYPTO. All rights reserved."
+
+repo_url: https://github.com/incryptohq/docs
+repo_name: incryptohq/docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo-wordmark.png
+  favicon: assets/mark.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://incrypto.me
+      name: incrypto.me
+    - icon: fontawesome/brands/github
+      link: https://github.com/incryptohq
+      name: GitHub
+    - icon: fontawesome/solid/envelope
+      link: mailto:hello@incrypto.me
+      name: hello@incrypto.me
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Platform:
+      - platform/index.md
+      - Products: platform/products.md
+      - Networks & assets: platform/networks.md
+  - Integrations:
+      - integrations/index.md
+  - Security:
+      - security/index.md
+      - Vulnerability disclosure: security/disclosure.md
+  - Brand:
+      - brand/index.md
+  - Support: support.md
+  - Changelog: changelog.md
