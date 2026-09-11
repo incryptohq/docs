@@ -10,7 +10,7 @@ hide:
 
 # Build on iNCRYPTO
 
-iNCRYPTO is a digital asset platform: instant exchange with in-house liquidity, crypto acquiring for merchants, multi-currency wallets, P2P fiat on/off-ramps and AML screening — one product family on a single, self-hosted blockchain infrastructure.
+iNCRYPTO is a digital asset platform: instant exchange with in-house liquidity, crypto acquiring for merchants, multi-currency wallets, systematic investment portfolios, P2P fiat on/off-ramps and AML screening — one product family on a single, self-hosted blockchain infrastructure.
 
 <div class="inc-chips" markdown>
 <span>8 networks</span>
@@ -37,6 +37,14 @@ iNCRYPTO is a digital asset platform: instant exchange with in-house liquidity, 
 
     [:octicons-arrow-right-24: Networks & assets](platform/networks.md)
 
+-   :material-chart-timeline-variant:{ .lg .middle } **iNTRADE** <span class="inc-status inc-status--dev">In development</span>
+
+    ---
+
+    Systematic, risk-first investment portfolios on perpetual futures. Choose a risk tier, not leverage.
+
+    [:octicons-arrow-right-24: iNTRADE](platform/intrade.md)
+
 -   :material-api:{ .lg .middle } **Integrations** <span class="inc-status inc-status--dev">Preview</span>
 
     ---
@@ -60,13 +68,5 @@ iNCRYPTO is a digital asset platform: instant exchange with in-house liquidity, 
     Logo, mark, colours and typography for partners and press.
 
     [:octicons-arrow-right-24: Brand assets](brand/index.md)
-
--   :material-lifebuoy:{ .lg .middle } **Support**
-
-    ---
-
-    Where to reach the right team — product, business or security.
-
-    [:octicons-arrow-right-24: Support](support.md)
 
 </div>

@@ -85,6 +85,7 @@ nav:
       - platform/index.md
       - Products: platform/products.md
       - Networks & assets: platform/networks.md
+      - iNTRADE: platform/intrade.md
   - Integrations:
       - integrations/index.md
   - Security:

@@ -12,6 +12,7 @@ All products share one account, one wallet layer and one infrastructure. Statuse
 | **iNCRYPTO Pay** | Crypto acquiring for merchants: invoicing, hosted checkout and settlement in the asset of the merchant's choice. | <span class="inc-status inc-status--dev">In development</span> |
 | **iNCRYPTO Wallet** | Multi-currency wallets with a full-featured dashboard: deposits, withdrawals, history, security controls. | <span class="inc-status inc-status--dev">In development</span> |
 | **iNCRYPTO Shield** | AML screening of digital assets and counterparties, integrated into deposits, withdrawals and merchant flows. | <span class="inc-status inc-status--dev">In development</span> |
+| **iNTRADE** | Systematic, risk-first investment portfolios on perpetual futures. You choose a risk tier; the engine sizes, limits and journals every position. [Details](intrade.md) | <span class="inc-status inc-status--dev">In development</span> |
 | **iNCRYPTO P2P** | Peer-to-peer market with fiat on/off-ramps across most countries, built on the same wallet and compliance layer. | <span class="inc-status inc-status--plan">Planned</span> |
 | **iNCRYPTO Mobile** | Wallet apps for iOS and Android. | <span class="inc-status inc-status--plan">Planned</span> |
 

@@ -14,6 +14,7 @@ iNCRYPTO is a **digital asset platform**: a family of products that share one ac
 | **Wallet layer** | Multi-currency custody for users and merchants: deposit addresses, balances, transaction history, withdrawal controls. |
 | **Exchange engine** | Instant crypto-to-crypto conversion with in-house liquidity and transparent rates. |
 | **Compliance** | AML screening of assets and counterparties built into the transaction flow. |
+| **Investment products** | iNTRADE: systematic multi-strategy portfolios on perpetual futures, sized against a risk tier the user chooses. |
 | **Product surfaces** | Web dashboard today; merchant tools, mobile wallets and a P2P market on the roadmap. |
 
 ## How we engineer
