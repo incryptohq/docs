@@ -218,11 +218,13 @@
   white-space: nowrap;
 }
 .inc-status--live { background: rgba(34, 197, 94, 0.14); color: #4ADE80; }
-.inc-status--dev  { background: rgba(255, 107, 44, 0.14); color: var(--inc-orange-hover); }
-.inc-status--plan { background: rgba(139, 92, 246, 0.14); color: #A78BFA; }
+.inc-status--pre  { background: rgba(255, 107, 44, 0.14); color: var(--inc-orange-hover); }
+.inc-status--dev  { background: rgba(245, 158, 11, 0.14); color: #FBBF24; }
+.inc-status--plan { background: rgba(148, 163, 184, 0.14); color: #CBD5E1; }
 [data-md-color-scheme="default"] .inc-status--live { color: #15803D; }
-[data-md-color-scheme="default"] .inc-status--dev  { color: #C2410C; }
-[data-md-color-scheme="default"] .inc-status--plan { color: #6D28D9; }
+[data-md-color-scheme="default"] .inc-status--pre  { color: #C2410C; }
+[data-md-color-scheme="default"] .inc-status--dev  { color: #B45309; }
+[data-md-color-scheme="default"] .inc-status--plan { color: #475569; }
 
 /* ---------- brand swatches ---------- */
 .inc-swatch {

@@ -2,7 +2,7 @@
 title: Integrations
 ---
 
-# Integrations <span class="inc-status inc-status--dev">Preview</span>
+# Integrations <span class="inc-status inc-status--pre">Preview</span>
 
 The public API is not yet released. This section describes the integration model so partners can plan ahead; endpoint references, SDKs and sandbox access will be published with the API release.
 
@@ -11,11 +11,11 @@ The public API is not yet released. This section describes the integration model
 A merchant integration follows a familiar shape:
 
 1. **Create an invoice** for an amount in a fiat or crypto denomination. iNCRYPTO returns a hosted checkout URL and a payment address for the asset the customer selects.
-2. **Customer pays** on-chain. Detection is performed by iNCRYPTO's own nodes.
+2. **Customer pays** on-chain. Detection is performed by iNCRYPTO's network layer (own nodes on six of eight networks).
 3. **Webhook** notifies the merchant's backend as the payment progresses: seen, confirmed, settled, or expired.
 4. **Settlement** to the merchant's balance in the asset of their choice, with the exchange leg handled by iNCRYPTO Exchange when the customer paid in a different asset.
 
-Every step is screened by iNCRYPTO Shield; a flagged payment is held rather than settled, and the merchant is informed through the same webhook channel.
+When iNCRYPTO Shield (in development) is released, every step will be screened by it: a flagged payment will be held rather than settled, and the merchant informed through the same webhook channel.
 
 ## Webhooks
 
