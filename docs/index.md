@@ -10,12 +10,12 @@ hide:
 
 # Build on iNCRYPTO
 
-iNCRYPTO is a digital asset platform: instant exchange with in-house liquidity, crypto acquiring for merchants, multi-currency wallets, systematic investment portfolios, P2P fiat on/off-ramps and AML screening — one product family on a single, self-hosted blockchain infrastructure.
+iNCRYPTO is a digital asset platform: multi-currency wallets, crypto-to-crypto exchange, crypto acquiring for merchants and systematic investment portfolios — with AML screening, P2P fiat on/off-ramps and mobile apps on the roadmap. One account and one ledger, on blockchain infrastructure we operate ourselves.
 
 <div class="inc-chips" markdown>
 <span>8 networks</span>
 <span>17 languages</span>
-<span>Self-hosted nodes</span>
+<span>Own nodes on 6 networks</span>
 </div>
 </div>
 
@@ -37,7 +37,7 @@ iNCRYPTO is a digital asset platform: instant exchange with in-house liquidity, 
 
     [:octicons-arrow-right-24: Networks & assets](platform/networks.md)
 
--   :material-chart-timeline-variant:{ .lg .middle } **iNTRADE** <span class="inc-status inc-status--dev">In development</span>
+-   :material-chart-timeline-variant:{ .lg .middle } **iNTRADE** <span class="inc-status inc-status--pre">Pre-launch</span>
 
     ---
 
@@ -45,7 +45,7 @@ iNCRYPTO is a digital asset platform: instant exchange with in-house liquidity, 
 
     [:octicons-arrow-right-24: iNTRADE](platform/intrade.md)
 
--   :material-api:{ .lg .middle } **Integrations** <span class="inc-status inc-status--dev">Preview</span>
+-   :material-api:{ .lg .middle } **Integrations** <span class="inc-status inc-status--pre">Preview</span>
 
     ---
 

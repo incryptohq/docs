@@ -8,11 +8,11 @@ All products share one account, one wallet layer and one infrastructure. Statuse
 
 | Product | What it does | Status |
 |---|---|---|
-| **iNCRYPTO Exchange** | Instant crypto-to-crypto exchange with in-house liquidity and transparent rates. Fixed quote at order time, automated settlement. | <span class="inc-status inc-status--dev">In development</span> |
-| **iNCRYPTO Pay** | Crypto acquiring for merchants: invoicing, hosted checkout and settlement in the asset of the merchant's choice. | <span class="inc-status inc-status--dev">In development</span> |
-| **iNCRYPTO Wallet** | Multi-currency wallets with a full-featured dashboard: deposits, withdrawals, history, security controls. | <span class="inc-status inc-status--dev">In development</span> |
-| **iNCRYPTO Shield** | AML screening of digital assets and counterparties, integrated into deposits, withdrawals and merchant flows. | <span class="inc-status inc-status--dev">In development</span> |
-| **iNTRADE** | Systematic, risk-first investment portfolios on perpetual futures. You choose a risk tier; the engine sizes, limits and journals every position. [Details](intrade.md) | <span class="inc-status inc-status--dev">In development</span> |
+| **iNCRYPTO Exchange** | Crypto-to-crypto exchange. Each order is routed to a major trading venue and paid out on-chain to the customer's address; the rate floats until the deposit is confirmed. Every order has its own tracking page. | <span class="inc-status inc-status--pre">Pre-launch</span> |
+| **iNCRYPTO Pay** | Crypto acquiring for merchants: invoicing by API, hosted checkout, signed webhooks and settlement in the asset of the merchant's choice. Merchants are onboarded individually. | <span class="inc-status inc-status--pre">Pre-launch</span> |
+| **iNCRYPTO Wallet** | Multi-currency wallets with a full-featured dashboard: deposits, withdrawals, history, security controls. | <span class="inc-status inc-status--live">Available</span> |
+| **iNCRYPTO Shield** | AML screening of digital assets and counterparties, to be integrated into deposits, withdrawals and merchant flows. | <span class="inc-status inc-status--dev">In development</span> |
+| **iNTRADE** | Systematic, risk-first investment portfolios on perpetual futures. You choose a risk tier; the engine sizes, limits and journals every position. [Details](intrade.md) | <span class="inc-status inc-status--pre">Pre-launch</span> |
 | **iNCRYPTO P2P** | Peer-to-peer market with fiat on/off-ramps across most countries, built on the same wallet and compliance layer. | <span class="inc-status inc-status--plan">Planned</span> |
 | **iNCRYPTO Mobile** | Wallet apps for iOS and Android. | <span class="inc-status inc-status--plan">Planned</span> |
 
@@ -20,6 +20,7 @@ All products share one account, one wallet layer and one infrastructure. Statuse
 
 | Status | Meaning |
 |---|---|
-| <span class="inc-status inc-status--live">Live</span> | Generally available to users or partners. |
-| <span class="inc-status inc-status--dev">In development</span> | Built and under pre-launch hardening; not yet generally available. |
+| <span class="inc-status inc-status--live">Available</span> | Open to users or partners today. |
+| <span class="inc-status inc-status--pre">Pre-launch</span> | Built and in final checks; not yet generally available. |
+| <span class="inc-status inc-status--dev">In development</span> | Being built. |
 | <span class="inc-status inc-status--plan">Planned</span> | On the roadmap; design may still change. |

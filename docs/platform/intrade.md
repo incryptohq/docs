@@ -2,7 +2,7 @@
 title: iNTRADE
 ---
 
-# iNTRADE <span class="inc-status inc-status--dev">In development</span>
+# iNTRADE <span class="inc-status inc-status--pre">Pre-launch</span>
 
 **Systematic, risk-first investment portfolios on perpetual futures.** iNTRADE runs a multi-strategy portfolio on USDT-margined perpetual futures and manages it against a risk budget you choose. It will be available at [trade.incrypto.me](https://trade.incrypto.me).
 
